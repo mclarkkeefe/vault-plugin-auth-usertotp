@@ -10,8 +10,8 @@ Assuming you have an already running/configured Vault instance:
 
 1. Add `plugin_directory = "<folder-where-you-will-put-the plugin>"` to your vault config
 2. Download the plugin from the releases page to the folder above
-3. Register the plugin in vault: `vault plugin register -sha256=$(sha256sum <path/to/plugin> | cut -d\  -f 1)) <plugin-name>
-4. Enable the plugin in vault: `vault auth enable -path=userpass <plugin-name>
+3. Register the plugin in vault: `vault plugin register -sha256=$(sha256sum <path/to/plugin> | cut -d\  -f 1)) <plugin-name>`
+4. Enable the plugin in vault: `vault auth enable -path=userpass <plugin-name>`
 
 ## Use
 
